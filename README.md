@@ -1,21 +1,15 @@
 ## Data Persistence and API Integration
 
-### Overview
+## How to Run
+### 1. Clone the repo
+`git clone https://github.com/Mitchie2910/GenderizeIntegration.git`
 
-Backend service that enriches a name using external APIs, stores processed data, and exposes REST endpoints for retrieval and management.
+### 2. Build the project
+`mvn clean install`
 
-### External APIs
+### 3. Run the application
+`mvn spring-boot:run`
 
-- <https://api.genderize.io?name={name}>
-- <https://api.agify.io?name={name}>
-- <https://api.nationalize.io?name={name}>
-
-### Data Processing
-
-Genderize → gender, gender_probability, count → sample_size
-- Agify → age + age_group
-0–12 child, 13–19 teenager, 20–59 adult, 60+ senior
-- Nationalize → highest probability country → country_id + country_probability
 
 ## EndPoints
 
